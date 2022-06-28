@@ -4,83 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아 옹 다 옹</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>아옹다옹</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+  
+    <script src="animatescroll.min.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
-    <div>
+   
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">아옹다옹</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">마이페이지<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <!-- 로그인 전이면 '로그인을 해 주세요.' 출력, 로그인 후면 '사용자님, 환영합니다!' 출력 -->
+                      <!-- <li>로그인 상태 안내</li> -->
+                      <!-- 구분선 -->
+                      <li class="divider"></li>
+                      <li><a href="#">내 정보</a></li>
+                      <li><a href="#">장바구니</a></li>
+                      <li><a href="#">주문목록</a></li>
+                      <li><a href="#">리뷰</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="search" class="btn btn-default">검색</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+          <!-- 여기까지 header -->
+    
+      <!-- 상단 제품 카테고리 버튼 -->
+      <div class="container">
+        <div class="category_board col-sm-12 col-sm-12" id="category_menu">
+          <ul class="category_h col-sm-12" id="item">
+            <a hef="#" class="category_atag"><li class="category_a">New 신상</li></a>
+            <a href="#" class="category_atag"><li class="category_a">인기item</li></a>
+            <a href="#" class="category_atag"><li class="category_a">15% sale</li></a>
+            <a href="#" class="category_atag"><li class="category_a">출시예정</li></a>
+          </ul>
+         
+          <ul class="category_h col-sm-12" id="item">
+            <a href="#" class="category_atag"><li class="category_b">사료/간식</li></a>
+            <a href="#" class="category_atag"><li class="category_b">패션/잡화</li></a>
+            <a href="#" class="category_atag"><li class="category_b">가구/용품</li></a>
+            <a href="#" class="category_atag"><li class="category_b">소모품/기타</li></a>
+          </ul>
+        </div> 
+        <!-- 메뉴 끝 -->
+
+
+    <div class="login_header">
         <h2>LOGIN</h2>
     </div>
 
-    <form id="member_form_1533527658" name="" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
-        <input id="returnUrl" name="returnUrl" value="https://m.rowky.com/" type="hidden">
-        <input id="forbidIpUrl" name="forbidIpUrl" value="/" type="hidden">
-        <input id="certificationUrl" name="certificationUrl" value="/intro/adult_certification.html" type="hidden">
-        <input id="sIsSnsCheckid" name="sIsSnsCheckid" value="" type="hidden">
-        <input id="sProvider" name="sProvider" value="" type="hidden"><div id="member_login_module_id" class="xans-element- xans-member xans-member-login "><!--
-                $defaultReturnUrl = /index.html
-            -->
-        <!--주문조회-->
-        <!-- <div class="loginWrap">
-                <div class="ec-base-tab gMerge displaynone">
-                    <ul>
-        <li class="selected">
-                            <a href="#member">회원</a>
-                        </li>
-                        <li>
-                            <a href="#noMember">비회원</a>
-                        </li>
-                    </ul>
-        </div> -->
-                <!-- <div class="loginHeader">
-                    <div class="keyboard">
-                        <button type="button" class="btnKey korean" title="korean">한글자판</button>
-                        <button type="button" class="btnKey special" title="special">특수문자</button>
-                    </div>
-                    <div class="view">
-                        <div class="korean"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
-                        <div class="special"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
-                    </div>
-                </div> -->
-                <fieldset>
+    <fieldset>
         <div class="formBox">
-                        <div class="form">
-                            <input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="아이디" value="" type="text">                    <input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드" fw-msg="" autocomplete="off" value="" type="password" placeholder="패스워드">                </div>
-                        <div class="option">
-                            <span class="auto"><input id="use_login_keeping0" name="use_login_keeping" fw-filter="" fw-label="로그인상태유지" fw-msg="" onclick="MemberAction.confirmLoginKeeping(this);" value="T" type="checkbox"><label for="use_login_keeping0">로그인 상태 유지</label></span>
-                            <span class="save"></span>
-                            <span class="ssl"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_ssl.png" alt="보안접속"><em>보안접속</em></span>
-                        </div>
-                        <div class="ec-base-button gFull">
-                            <button type="button" class="btnSubmit" onclick="MemberAction.login('member_form_1533527658'); return false;">로그인</button>
-                            <a href="" onclick="" class="btnEm displaynone">비회원 구매</a>
-                        </div>
-                        <div class="loginUtil">
-                            <a href="/member/id/find_id.html" class="btnLogin">아이디찾기</a>
-                            <a href="/member/passwd/find_passwd_info.html" class="btnLogin">비밀번호찾기</a>
-                            <a href="/member/agreement.html" class="btnLogin">회원가입</a>
-                        </div>
-                        <div class="snsLogin">
-                            <a href="#none" class="btnNaver " onclick="MemberAction.snsLogin('naver', '%2F')"><span>네이버 로그인</span></a>
-                            <a href="#none" class="btnFacebook displaynone" onclick=""><span>Facebook으로 로그인</span></a>
-                            <a href="#none" class="btnGoogle displaynone" onclick=""><span>구글 로그인</span></a>
-                            <a href="#none" class="btnKakao displaynone" onclick=""><span>카카오계정 로그인</span></a>
-                            <a href="#none" class="btnLine displaynone" onclick=""><span>LINE 로그인</span></a>
-                            <a href="#none" class="btnApple displaynone" onclick=""><span>Apple 로그인</span></a>
-                        </div>
-                    </div>
-                </fieldset>
+            <div class="form">
+                <input class="" value="" type="text" placeholder="아이디" >                    
+                <input class=" "value="" type="password" placeholder="패스워드">
+            </div>
+            <div class="option">
+                <span class="auto"><input id="use_login_keeping0" name="use_login_keeping" fw-filter="" fw-label="로그인상태유지" fw-msg="" onclick="MemberAction.confirmLoginKeeping(this);" value="T" type="checkbox"><label for="use_login_keeping0">로그인 상태 유지</label></span>
+                <span class="save"></span>
+                <span class="ssl"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_ssl.png" alt="보안접속"><em>보안접속</em></span>
+            </div>
+            <div class="ec-base-button gFull">
+                <button type="button" class="btnSubmit" onclick="MemberAction.login('member_form_1533527658'); return false;">로그인</button>
+                <a href="" onclick="" class="btnEm displaynone">비회원 구매</a>
+            </div>
+            <div class="loginUtil">
+                <a href="/member/id/find_id.html" class="btnLogin">아이디찾기</a>
+                <a href="/member/passwd/find_passwd_info.html" class="btnLogin">비밀번호찾기</a>
+                <a href="/member/agreement.html" class="btnLogin">회원가입</a>
+            </div>
+            <div class="snsLogin">
+                <a href="#none" class="btnNaver " onclick="MemberAction.snsLogin('naver', '%2F')"><span>네이버 로그인</span></a>
+                <a href="#none" class="btnFacebook displaynone" onclick=""><span>Facebook으로 로그인</span></a>
+                <a href="#none" class="btnGoogle displaynone" onclick=""><span>구글 로그인</span></a>
+                <a href="#none" class="btnKakao displaynone" onclick=""><span>카카오계정 로그인</span></a>
+                <a href="#none" class="btnLine displaynone" onclick=""><span>LINE 로그인</span></a>
+                <a href="#none" class="btnApple displaynone" onclick=""><span>Apple 로그인</span></a>
+            </div>
         </div>
-        <!--//주문조회-->
-        </div>
-    </form>
+    </fieldset>
+   
 </body>
 </html>

@@ -144,8 +144,10 @@ body {
     margin: 30px 0;
 }
 
-/* ul li 로 테이블 생성 */
 
+
+
+/* category */
 
 .category_atag{
     text-decoration: none !important;
@@ -204,8 +206,17 @@ body {
     
 }
 
+/* category 끝 */
 
-/* 테이블생성 끝 */
+
+/* login */
+
+.login_header h2{
+    text-align: center;
+    font-size: 30px;
+
+}
+
 
 @media screen and (min-width:576px) {
     /* 스마트폰 가로 */
