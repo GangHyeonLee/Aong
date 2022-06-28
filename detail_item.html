@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>아옹다옹</title>
+        <link rel="stylesheet" href="css/style.css" />
+
+        <link rel="stylesheet" href="css/animate.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <script src="js/animatescroll.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </head>
+    <body id="home" data-spy="scroll" data-target="#navbar-scroll" data-offset="50">
+        <header>
+            <!-- 상단 고정형 네비게이션 메뉴 -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button
+                            type="button"
+                            class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"
+                        >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">아옹다옹</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li class="dropdown">
+                                <a
+                                    href="#"
+                                    class="dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    role="button"
+                                    aria-expanded="false"
+                                    >마이페이지<span class="caret"></span
+                                ></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="divider"></li>
+                                    <li><a href="#">내 정보</a></li>
+                                    <li><a href="#">장바구니</a></li>
+                                    <li><a href="#">주문목록</a></li>
+                                    <li><a href="#">리뷰</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Search"
+                                    id="searchBar"
+                                />
+                                <button type="search" class="btn btn-default" id="searchButton">
+                                    검색
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- 네비게이션 끝 -->
+        </header>
+        <!-- 헤더부분 끝 -->
+
+        <div class="container">
+            <!-- 상단 제품 카테고리 버튼 -->
+            <div
+                class="category_board col-sm-offset-2 col-sm-8 col-sm-offset-2 col-sm-8"
+                id="category_menu"
+            >
+                <ul class="category_h col-sm-12" id="item">
+                    <a hef="#" class="category_atag"><li class="category_a">New 신상</li></a>
+                    <a href="#" class="category_atag"><li class="category_a">인기item</li></a>
+                    <a href="#" class="category_atag"><li class="category_a">15% sale</li></a>
+                    <a href="#" class="category_atag"><li class="category_a">출시예정</li></a>
+                </ul>
+
+                <ul class="category_h col-sm-12" id="item">
+                    <a href="#" class="category_atag"><li class="category_b">사료/간식</li></a>
+                    <a href="#" class="category_atag"><li class="category_b">패션/잡화</li></a>
+                    <a href="#" class="category_atag"><li class="category_b">가구/용품</li></a>
+                    <a href="#" class="category_atag"><li class="category_b">소모품/기타</li></a>
+                </ul>
+            </div>
+            <!-- 버튼메뉴 끝 -->
+
+            <!-- 신상메뉴 -->
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div
+                        class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+                    >
+                        <div class="col mb-5">
+                            <img
+                                class="card-img-top"
+                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                                alt="..."
+                            />
+                            <h2>제품명</h2>
+                            <p>가격</p>
+                            <label for="quantity">수량</label>
+                            <select class="form-control" name="quantity">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <!-- 어코디언 -->
+                        <h3>기본설명</h3>
+                        <p>기본 설명 내용 뚜루룰루</p>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a
+                                            data-toggle="collapse"
+                                            data-parent="#accordion"
+                                            href="#collapseOne"
+                                        >
+                                            <span class="glyphicon glyphicon-star"> </span>
+                                            상세설명 더 보기
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        두산 그룹 웹 사이트 부터 시작하여, 두산베어스, 국제유도연맹
+                                        및 대형 게임 사이트, 쇼핑몰 등 지금까지 50여개가 넘는 다양한
+                                        사이트를 작업해 왔으며 풍부한 실무 경험을 갖추고 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 하단 -->
+            <footer class="py-5" id="underVar">
+                <div class="container px-4 px-lg-5">
+                    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
