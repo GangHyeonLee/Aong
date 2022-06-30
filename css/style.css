@@ -127,9 +127,6 @@ footer {
     text-align: center;
 }
 
-
-/* category */
-
 .category_atag{
     text-decoration: none !important;
     color: rgb(60, 60, 60);
@@ -250,11 +247,7 @@ footer {
 
 .signup_pw2 {
     display: inline;
-
-
-}
-/* 회 원 가 입 끝 */
-
+    
 .signup_signin{
     text-align: center;
 }
@@ -264,23 +257,8 @@ footer {
 
 
 /* 반응형 화면 비율 조정 */
+/* 스마트폰 세로 320px */
 
-/* 스마트폰 세로 */
-/* 576px 미만 검색창 크기 조정 */
-#nav_searchBar {
-    width: 75%;
-    display: inline;
-}
-
-#nav_searchButton {
-    display: inline;
-    float: right;
-    margin-right: 10%;
-}
-
-/* 반응형 화면 비율 조정 */
-
-/* 스마트폰 세로 */
 /* 576px 미만 검색창 크기 조정 */
 #nav_searchBar {
     width: 75%;
