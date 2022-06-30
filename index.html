@@ -25,7 +25,7 @@
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-scroll" data-offset="50">
   <header>
-    <!-- 상단 고정형 네비게이션 메뉴 -->
+    <!-- 상단 고정형 네비게이션 -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">아옹다옹</a>
+          <a class="navbar-brand" href="#" id="nav_logo">아옹다옹</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -45,9 +45,6 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">마이페이지<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <!-- 로그인 전이면 '로그인을 해 주세요.' 출력, 로그인 후면 '사용자님, 환영합니다!' 출력 -->
-                <!-- <li>로그인 상태 안내</li> -->
-                <!-- 구분선 -->
                 <li class="divider"></li>
                 <li><a href="#">내 정보</a></li>
                 <li><a href="#">장바구니</a></li>
@@ -58,14 +55,16 @@
           </ul>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search" id="searchBar">
-              <button type="search" class="btn btn-default" id="searchButton">검색</button>
+              <input type="text" class="form-control" placeholder="Search" id="nav_searchBar">
+              <button type="search" class="btn btn-default" id="nav_searchButton">검색</button>
             </div>
           </form>
         </div>
       </div>
     </nav>
+    <!-- 네비게이션 끝 -->
   </header>
+  <!-- 헤더부분 끝 -->
 
   <!-- 메인 화면 인기상품 슬라이드 사진 -->
   <div id="carousel-example-generic" class="carousel slide">
@@ -76,13 +75,13 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <a href="#"><img src="img/pets.jpg" class="img-responsive" alt="Responsive image" id="mainImg"></a>
+        <a href="#"><img src="img/pets.jpg" class="img-responsive" alt="Responsive image" id="main_slideImg"></a>
       </div>
       <div class="item">
-        <a href="#"><img src="img/test.jpg" class="img-responsive" alt="Responsive image" id="mainImg"></a>
+        <a href="#"><img src="img/test.jpg" class="img-responsive" alt="Responsive image" id="main_slideImg"></a>
       </div>
       <div class="item">
-        <a href="#"><img src="img/dog.jpg" class="img-responsive" alt="Responsive image" id="mainImg"></a>
+        <a href="#"><img src="img/dog.jpg" class="img-responsive" alt="Responsive image" id="main_slideImg"></a>
         <!-- <a href="#"><img src="img/cat.jpg" class="img-responsive" alt="Responsive image" id="mainImg"></a> -->
       </div>
     </div>
@@ -96,73 +95,83 @@
 
   <!-- 상단 제품 카테고리 버튼 -->
   <div class="container">
-    <div class="category_board col-sm-offset-2 col-sm-8 col-sm-offset-2 col-sm-8" id="category_menu">
-      <ul class="category_h col-sm-12" id="item">
+    <div class="category_board col-sm-offset-2 col-sm-8 col-sm-offset-2 col-sm-8">
+      <ul class="category_h col-sm-12" id="category_menu">
         <a hef="#" class="category_atag"><li class="category_a">New 신상</li></a>
         <a href="#" class="category_atag"><li class="category_a">인기item</li></a>
         <a href="#" class="category_atag"><li class="category_a">15% sale</li></a>
         <a href="#" class="category_atag"><li class="category_a">출시예정</li></a>
       </ul>
 
-      <ul class="category_h col-sm-12" id="item">
+      <ul class="category_h col-sm-12" id="category_menu">
         <a href="#" class="category_atag"><li class="category_b">사료/간식</li></a>
         <a href="#" class="category_atag"><li class="category_b">패션/잡화</li></a>
         <a href="#" class="category_atag"><li class="category_b">가구/용품</li></a>
         <a href="#" class="category_atag"><li class="category_b">소모품/기타</li></a>
       </ul>
-    </div> 
-    <!-- 메뉴 끝 -->
+    </div>
+  </div>
+  <!-- 메뉴 끝 -->
 
   <!-- 신상메뉴 -->
-  <section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
-      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-          <div class="col mb-5">
-              <div class="card h-100">
-                  <!-- Product image-->
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                  <!-- Product details-->
-                  <div class="card-body p-4">
-                      <div class="text-center">
-                          <!-- Product name-->
-                          <h5 class="fw-bolder">Fancy Product <span class="label label-info">New</span></h5>
-                          <!-- Product price-->
-                          $40.00 - $80.00
-                      </div>
-                  </div>
-                  <!-- Product actions-->
-                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                  </div>
-              </div>
-          </div>
-          <div class="col mb-5">
-            <div class="card h-100">
-                <!-- Product image-->
-                <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                <!-- Product details-->
-                <div class="card-body p-4">
-                    <div class="text-center">
-                        <!-- Product name-->
-                        <h5 class="fw-bolder">Fancy Product</h5>
-                        <!-- Product price-->
-                        $40.00 - $80.00
-                    </div>
-                </div>
-                <!-- Product actions-->
-                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                </div>
-            </div>
+  <!-- 첫번째 줄 -->
+  <section>
+    <div class="container">
+      <h3 class="category_menu_label">인기 Item</h3>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="card h-100 card-body p-4 card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <!-- Product image-->
+          <a class="btn btn-outline-dark mt-auto" href="#">
+            <img class="card-img-top category_img_size" src="img/test.jpg" alt="dress" />
+          </a>
+          <!-- Product details-->
+          <!-- Product name-->
+          <h5 class="category_pd_name pd_name fw-bolder">제품명</h5>
+          <!-- Product price-->
+          <p class="category_pd_brief pd_name">간략설명 / 할인 전 금액</p>
+          <p class="category_pd_price pd_name">가격</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="card h-100 card-body p-4 card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <a class="btn btn-outline-dark mt-auto" href="#">
+            <img class="card-img-top category_img_size" src="img/dog_dress.jpg" alt="dress" />
+          </a>
+          <h5 class="category_pd_name pd_name fw-bolder">제품명</h5>
+          <p class="category_pd_brief pd_name">간략설명 / 할인 전 금액</p>
+          <p class="category_pd_price pd_name">가격</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="card h-100 card-body p-4 card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <a class="btn btn-outline-dark mt-auto" href="#">
+            <img class="card-img-top category_img_size" src="img/dog_dress.jpg" alt="dress" />
+          </a>
+          <h5 class="category_pd_name pd_name fw-bolder">제품명</h5>
+          <p class="category_pd_brief pd_name">간략설명 / 할인 전 금액</p>
+          <p class="category_pd_price pd_name">가격</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="card h-100 card-body p-4 card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <a class="btn btn-outline-dark mt-auto" href="#">
+            <img class="card-img-top category_img_size" src="img/dog_dress.jpg" alt="dress" />
+          </a>
+          <h5 class="category_pd_name pd_name fw-bolder">제품명</h5>
+          <p class="category_pd_brief pd_name">간략설명 / 할인 전 금액</p>
+          <p class="category_pd_price pd_name">가격</p>
         </div>
       </div>
     </div>
   </section>
-
   
+  <hr>
+
   <!-- 하단 -->
-  <footer class="py-5" id="underVar">
-    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+  <footer>
+    <div class="container px-4 px-lg-5">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+    </div>
   </footer>
 
   <!-- 메인화면 슬라이드사진 옵션 -->
