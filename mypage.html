@@ -45,9 +45,6 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">마이페이지<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <!-- 로그인 전이면 '로그인을 해 주세요.' 출력, 로그인 후면 '사용자님, 환영합니다!' 출력 -->
-                <!-- <li>로그인 상태 안내</li> -->
-                <!-- 구분선 -->
                 <li class="divider"></li>
                 <li><a href="#">내 정보</a></li>
                 <li><a href="#">장바구니</a></li>
@@ -66,77 +63,76 @@
       </div>
     </nav>
   </header>
-  <form class="form-horizontal">
-    <h1>내 정보</h1>
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label">Id</label>
-      <div class="col-sm-5">
-        <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-      <div class="col-sm-5">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        <label>
-          <input type="checkbox"> 패스워드 표시
-        </label>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputName3" class="col-sm-2 control-label">이름</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control" id="inputName3" placeholder="Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress3" class="col-sm-2 control-label">주소</label>
-      <button type="submit" class="btn btn-default">우편번호</button>
-      <div class="col-sm-5">
-        <input type="text" class="form-control">
-        <input type="text" class="form-control">
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-      <div class="col-sm-5">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        <button type="submit" class="btn btn-default">중복확인</button>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputPhone3" class="col-sm-2 control-label">전화</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control" id="inputPhone3" placeholder="숫자만 입력( ' - ' 제외 )">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAlarm3" class="col-sm-2 control-label">SMS 수신여부</label>
-      <div class="col-sm-5">
-        <input type="radio" id="inputAlarm3">
-        <label for="inputAlarm3" class="col-sm-2 control-label">수신함</label>
-      </div>
-      <div class="col-sm-5">
-        <input type="radio" id="inputAlarm3">
-        <label for="inputAlarm3" class="col-sm-2 control-label">수신거절</label>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-5">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Remember me
-          </label>
+
+  
+  <div class="container">
+    <div class=" col-sm-12 col-sm-12">
+      <form class="form-horizontal">
+        <div class="signup_board_outside">
+          <h1 class="mypage">내정보</h1>
+          <!-- board -->
+          <div class="form-horizontal">
+            <!-- ID 입력창 -->
+            <div class="form-group"><label for="inputEmail3" class="col-sm-3 control-label">Id</label>
+              <div class="col-sm-6">
+                <input class="form-control" type="text" value="아이디" readonly>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">비밀번호/확인</label>
+              <div class="col-sm-4">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password check">
+                <span id="helpBlock" class="help-block">9 ~ 14자리(영문, 숫자, 특수기호 모두 포함)</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputName3" class="col-sm-3 control-label">이름</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputName3" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress3" class="col-sm-3 control-label">주소</label>
+              <div class="col-sm-2">
+                <button type="submit" class="btn btn-default">우편번호</button>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+              <div class="col-sm-4">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <button type="submit" class="btn btn-default">중복확인</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPhone3" class="col-sm-3 control-label">전화</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputPhone3" placeholder="숫자만 입력( ' - ' 제외 )">
+                <button type="submit" class="btn btn-default">인증하기</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAlarm3" class="col-sm-3 control-label">SMS 수신여부</label>
+              <div class="col-sm-6">
+                <label for="inputAlarm3" class="col-sm-4 control-label radio-inline"><input type="radio" name="optionsRadios" id="inputAlarm3">수신함</label>
+                <label for="inputAlarm4" class="col-sm-4 control-label radio-inline"><input type="radio" name="optionsRadios" id="inputAlarm4">수신거절</label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-default">수정/저장</button>
+          <button type="submit" class="btn btn-default">취소</button>
         </div>
-      </div>
+      </form>
     </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Sign in</button>
-      </div>
-    </div>
-  </form>
+  </div>
+
   <!-- 하단 -->
   <footer class="py-5" id="underVar">
     <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
