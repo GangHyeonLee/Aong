@@ -127,7 +127,9 @@ footer {
     text-align: center;
 }
 
-.category_atag {
+/* category */
+
+.category_atag{
     text-decoration: none !important;
     color: rgb(60, 60, 60);
 }
@@ -174,7 +176,7 @@ footer {
 
 /* category 끝 */
 
-/* 제품상세(detail_item) */
+/* 제품상세(detail_item) 시작 */
 
 .detail_item_img {
     margin-top: 20px;
