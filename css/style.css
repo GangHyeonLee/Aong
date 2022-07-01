@@ -123,7 +123,7 @@ footer {
     text-align: center;
 }
 
-.category_atag{
+.category_atag {
     text-decoration: none !important;
     color: rgb(60, 60, 60);
 }
@@ -168,10 +168,13 @@ footer {
     height: 100%;
 }
 
+.category_pagenum {
+    text-align: center;
+}
+
 /* category 끝 */
 
-
-/* 제품상세(detail_item) 시작 */
+/* 제품상세(detail_item) */
 
 .detail_item_img {
     margin-top: 20px;
@@ -206,6 +209,9 @@ footer {
 }
 
 /* 회 원 가 입 */
+
+
+
 .signup {
     margin-top: 5%;
     margin-bottom: 50px;
@@ -289,7 +295,6 @@ footer {
         width: 20%;
     }
 }
-
 
 /* 스마트폰 가로 */
 @media screen and (min-width: 576px) {
