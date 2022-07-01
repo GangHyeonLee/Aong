@@ -92,17 +92,13 @@ body {
     padding-top: 55px;
 }
 
-#nav_logo {
-    padding-left: 38%;
-}
-
 #main_slideImg {
     display: inline;
     padding: 0;
     margin: 0;
     /* 사진 크기 고정값 */
     width: 100%;
-    height: 500px;
+    height: 650px;
 }
 
 footer {
@@ -247,7 +243,8 @@ footer {
 
 .signup_pw2 {
     display: inline;
-    
+}
+
 .signup_signin{
     text-align: center;
 }
@@ -257,48 +254,88 @@ footer {
 
 
 /* 반응형 화면 비율 조정 */
-/* 스마트폰 세로 320px */
+/* 320px 미만 */
+@media screen and (max-width: 319.99px) {
+    #nav_header{
+        margin-left: 30%;
+    }
 
-/* 576px 미만 검색창 크기 조정 */
-#nav_searchBar {
-    width: 75%;
-    display: inline;
+    #nav_searchBar{
+        margin-left: 5%;
+        display: inline;
+        width: 60%;
+    }
+
+    #nav_searchButton{
+        display: inline;
+        width: 30%;
+    }
 }
 
-#nav_searchButton {
-    display: inline;
-    float: right;
-    margin-right: 10%;
+/* 스마트폰 세로 320px */
+@media screen and (min-width: 320px) {
+    #nav_header{
+        margin-left: 35%;
+    }
+    
+    #nav_searchBar{
+        margin-left: 5%;
+        display: inline;
+        width: 70%;
+    }
+
+    #nav_searchButton{
+        display: inline;
+        width: 20%;
+    }
 }
 
 
 /* 스마트폰 가로 */
 @media screen and (min-width: 576px) {
-    #nav_logo {
-        padding-left: 45%;
+    #nav_header {
+        margin-left: 40%;
+    }
+
+    #nav_searchBar{
+        margin-left: 5%;
+        width: 75%;
+    }
+
+    #nav_searchButton{
+        width: 15%;
     }
 }
 
+/* 타블렛 */
 @media screen and (min-width: 768px) {
-    /* 타블렛 */
-    #nav_logo {
-        padding-left: 30px;
+    ul.collapse{
+        display: inline !important;
+        visibility: visible !important;
     }
 
-    #bs-example-navbar-collapse-1 {
-        float: right;
+    #nav_header {
+        width: 110px;
+        margin-left: 20px;
     }
 
-    /* 768px 이상 검색창 크기 조정 */
-    #nav_searchBar {
-        width: 70%;
-        display: inline;
+    .nav_li{
+        float: right !important;
     }
 
-    #nav_searchButton {
-        display: inline;
-        float: right;
-        margin-right: 5%;
+    #nav_form{
+        text-align: right;
+    }
+
+    #nav_searchBar{
+        margin-left: 0;
+        margin-top: 8px;
+        width: 30%;
+    }
+
+    #nav_searchButton{
+        margin-top: 8px;
+        width: 10%;
     }
 }
 
